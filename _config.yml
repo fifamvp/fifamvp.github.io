@@ -76,6 +76,14 @@ search:
   path: search.xml
   field: post
 
+# Emoji
+githubEmojis:
+  enable: true
+  className: github-emoji
+  inject: true
+  styles:
+  customEmojis:
+
 # Metadata elements
 ## https://developer.mozilla.org/en-US/docs/Web/HTML/Element/meta
 meta_generator: true
