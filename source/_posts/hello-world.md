@@ -1,5 +1,6 @@
 ---
 title: Hello Goodbye.
+date: 2019-04-24 00:00:00
 ---
 Welcome to [Hexo](https://hexo.io/)! This is your very first post. Check [documentation](https://hexo.io/docs/) for more info. If you get any problems when using Hexo, you can find the answer in [troubleshooting](https://hexo.io/docs/troubleshooting.html) or you can ask me on [GitHub](https://github.com/hexojs/hexo/issues).
 
@@ -36,3 +37,36 @@ $ hexo deploy
 ```
 
 More info: [Deployment](https://hexo.io/docs/one-command-deployment.html)
+
+Test Highlight
+
+```java
+public class Annotations {
+
+    @Retention(RetentionPolicy.RUNTIME)
+    @Target({ ElementType.TYPE_USE, ElementType.TYPE_PARAMETER })
+    public @interface NonEmpty {
+    }
+
+    public static class Holder<@NonEmpty T> extends @NonEmpty Object {
+        public void method() throws @NonEmpty Exception {
+        }
+    }
+
+    @SuppressWarnings("unused")
+    public static void main(String[] args) {
+        final Holder<String> holder = new @NonEmpty Holder<String>();
+        @NonEmpty Collection<@NonEmpty String> strings = new ArrayList<>();
+    }
+
+}
+```
+
+Test Emoji
+
+::smile:
+
+:dog:
+
+
+
