@@ -4,18 +4,18 @@ menu:
   Index:
     url: /
     icon: fas fa-home
-  # Tags:
-  #   url: /tags
-  #   icon: fas fa-tags
-  # Categories:
-  #   url: /categories
-  #   icon: fas fa-bookmark
+  Tags:
+    url: /tags
+    icon: fas fa-tags
+  Categories:
+    url: /categories
+    icon: fas fa-bookmark
   # Archives:
   #   url: /archives
   #   icon: fas fa-archive
-  # About:
-  #   url: /about
-  #   icon: fas fa-user-circle
+  About:
+    url: /about
+    icon: fas fa-user-circle
   # Contact:
   #   url: /contact
   #   icon: fas fa-comments
@@ -203,7 +203,7 @@ clicklove:
 # profile in about page, including avatars, career, and personal introductions.
 # 在”关于”页面中配置个人信息，包括头像、职业和个人介绍.
 profile:
-  avatar: /medias/avatar.jpg
+  avatar: /medias/avatar-t.png
   career: Software Engineer
   introduction: 
 
