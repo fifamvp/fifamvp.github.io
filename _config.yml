@@ -84,6 +84,11 @@ githubEmojis:
   styles:
   customEmojis:
 
+# Address
+permalink_pinyin:
+  enable: true
+  separator: '-' # default: '-'
+
 # Metadata elements
 ## https://developer.mozilla.org/en-US/docs/Web/HTML/Element/meta
 meta_generator: true
