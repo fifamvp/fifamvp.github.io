@@ -271,13 +271,13 @@ postCalendar: true
 # the Gitalk config，default disabled
 # Gitalk 评论模块的配置，默认为不激活
 gitalk:
-  enable: false
-  owner:
-  repo:
+  enable: true
+  owner: fifamvp
+  repo: fifamvp.github.io
   oauth:
-    clientId:
-    clientSecret:
-  admin:
+    clientId: 1aeef5ce11967b5ca721
+    clientSecret: db2fc7e1944995272e2c5034b7a7edb96785d748
+  admin: fifamvp
 
 # the Gitment config，default disabled
 # Gitment 评论模块的配置，默认为不激活
