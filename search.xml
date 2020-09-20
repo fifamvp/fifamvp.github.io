@@ -4,6 +4,19 @@
   
     
     <entry>
+      <title>あの夏</title>
+      <link href="/blogs/2020/09/20/anonatsu/"/>
+      <url>/blogs/2020/09/20/anonatsu/</url>
+      
+        <content type="html"><![CDATA[<p>あの夏、あの季節に咲いていた花は　何て名前だったんだろう。<br>どんどん通り過ぎる季節に<br>道端に咲く花も　移り変わってゆく。<br>だけど、あの花は　きっと　どこかに咲き続けている。<br>そして、俺たちは　大人になっていく。<br>そう、俺たちは　いつもでも　あの花の願いをかなえ続けていく。</p><script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Hello Goodbye.</title>
       <link href="/blogs/2019/04/24/hello-world/"/>
       <url>/blogs/2019/04/24/hello-world/</url>
