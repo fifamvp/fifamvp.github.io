@@ -484,7 +484,7 @@ canvas_nest:
 
 # 背景静止彩带.
 ribbon:
-  enable: false
+  enable: true
   size: 150 # 彩带大小, 默认: 90.
   alpha: 0.6 # 彩带透明度 (0 ~ 1), 默认: 0.6.
   zIndex: -1 # 背景的z-index属性，css属性用于控制所在层的位置, 默认: -1.
