@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://fifamvp.github.io/"/>
-  <updated>2020-09-20T15:05:55.152Z</updated>
+  <updated>2020-10-06T14:55:52.239Z</updated>
   <id>https://fifamvp.github.io/</id>
   
   <author>
@@ -15,6 +15,34 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>群晖安装Docker</title>
+    <link href="https://fifamvp.github.io/blogs/2020/10/06/synology/synology-install-docker/"/>
+    <id>https://fifamvp.github.io/blogs/2020/10/06/synology/synology-install-docker/</id>
+    <published>2020-10-06T07:45:13.000Z</published>
+    <updated>2020-10-06T14:55:52.239Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;安装Docker&quot;&gt;&lt;a href=&quot;#安装Docker&quot; class=&quot;headerlink&quot; title=&quot;安装Docker&quot;&gt;&lt;/a&gt;安装Docker&lt;/h1&gt;&lt;p&gt;套件中心搜索Docker&lt;/p&gt;
+&lt;p&gt;&lt;img
+        
+      
+    
+    </summary>
+    
+    
+      <category term="NAS" scheme="https://fifamvp.github.io/categories/NAS/"/>
+    
+    
+      <category term="群晖" scheme="https://fifamvp.github.io/tags/%E7%BE%A4%E6%99%96/"/>
+    
+  </entry>
   
   <entry>
     <title>あの夏</title>
