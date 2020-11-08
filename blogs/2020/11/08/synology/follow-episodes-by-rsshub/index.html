@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="群晖安装Docker, FIFAMVP的小窝">
+    <meta name="keywords" content="在NAS上利用RSSHub实现追剧, FIFAMVP的小窝">
     <meta name="description" content="">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>群晖安装Docker | FIFAMVP的小窝</title>
+    <title>在NAS上利用RSSHub实现追剧 | FIFAMVP的小窝</title>
     <link rel="icon" type="image/png" href="/medias/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -203,13 +203,13 @@
 
 
 
-<!-- background-image: url('/images/docker.png') -->
+<!-- background-image: url('/medias/featureimages/8.jpg') -->
 <div class="bg-cover pd-header post-cover" style="background-color: #2d2d2d;">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">群晖安装Docker</h1>
+                    <h1 class="description center-align post-title">在NAS上利用RSSHub实现追剧</h1>
                 </div>
             </div>
         </div>
@@ -351,21 +351,21 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2020-10-06
+                    2020-11-08
                 </div>
                 
 
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2020-10-06
+                    2020-11-08
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    137
+                    439
                 </div>
                 
 
@@ -387,16 +387,53 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h1 id="安装Docker"><a href="#安装Docker" class="headerlink" title="安装Docker"></a>安装Docker</h1><p>套件中心搜索Docker</p>
-<p><img src="/blogs/2020/10/06/synology/synology-install-docker/img001.png" alt=""></p>
-<h1 id="启用国内镜像加速"><a href="#启用国内镜像加速" class="headerlink" title="启用国内镜像加速"></a>启用国内镜像加速</h1><p>Docker-&gt;注册表-&gt;设置-&gt;编辑</p>
-<p><img src="/blogs/2020/10/06/synology/synology-install-docker/img002.png" alt=""></p>
-<p><img src="/blogs/2020/10/06/synology/synology-install-docker/img003.png" alt=""></p>
-<p>勾选启用注册表镜像，输入镜像源地址</p>
-<p>国内的镜像源地址（选择其一）：</p>
-<p><a href="https://registry.docker-cn.com" target="_blank" rel="noopener">https://registry.docker-cn.com</a><br><a href="http://hub-mirror.c.163.com" target="_blank" rel="noopener">http://hub-mirror.c.163.com</a><br><a href="https://3laho3y3.mirror.aliyuncs.com" target="_blank" rel="noopener">https://3laho3y3.mirror.aliyuncs.com</a><br><a href="http://f1361db2.m.daocloud.io" target="_blank" rel="noopener">http://f1361db2.m.daocloud.io</a><br><a href="https://mirror.ccs.tencentyun.com" target="_blank" rel="noopener">https://mirror.ccs.tencentyun.com</a></p>
-<p><img src="/blogs/2020/10/06/synology/synology-install-docker/img004.png" alt=""></p>
-<p>确认后等待重启</p>
+                <h2 id="安装RSSHUB"><a href="#安装RSSHUB" class="headerlink" title="安装RSSHUB"></a>安装RSSHUB</h2><p>Github 地址：<a href="https://github.com/DIYgod/RSSHub" target="_blank" rel="noopener">https://github.com/DIYgod/RSSHub</a></p>
+<p>官方文档: <a href="https://docs.rsshub.app/" target="_blank" rel="noopener">https://docs.rsshub.app/</a></p>
+<ol>
+<li><p>在群晖中打开 Docker-&gt;<strong>注册表</strong>中找到 rsshub，双击第一个 diygod/rsshub 进行安装</p>
+<p><img src="/blogs/2020/11/08/synology/follow-episodes-by-rsshub/img001.png" alt=""></p>
+</li>
+<li><p>安装完成后，在<strong>映像</strong>中选中安装完成的 rsshub 然后点击启动</p>
+<p><img src="/blogs/2020/11/08/synology/follow-episodes-by-rsshub/img002.png" alt=""></p>
+</li>
+<li><p>自定义<strong>容器名称</strong>，然后选择<strong>高级设置</strong></p>
+<p><img src="/blogs/2020/11/08/synology/follow-episodes-by-rsshub/img003.png" alt=""></p>
+</li>
+<li><p>在<strong>端口设置</strong>中修改本地端口</p>
+<p><img src="/blogs/2020/11/08/synology/follow-episodes-by-rsshub/img004.png" alt=""></p>
+</li>
+<li><p>点击应用并下一步至完成</p>
+<p><img src="/blogs/2020/11/08/synology/follow-episodes-by-rsshub/img005.png" alt=""></p>
+</li>
+<li><p>在容器中可以看到 RSSHub 显示正常运行</p>
+<p><img src="/blogs/2020/11/08/synology/follow-episodes-by-rsshub/img006.png" alt=""></p>
+</li>
+<li><p>浏览器输入 {群晖域名}:{刚设置的端口}，如下图所示则 RSSHub 运行正常。</p>
+<p><img src="/blogs/2020/11/08/synology/follow-episodes-by-rsshub/img007.png" alt=""></p>
+</li>
+</ol>
+<h2 id="获取字幕组链接"><a href="#获取字幕组链接" class="headerlink" title="获取字幕组链接"></a>获取字幕组链接</h2><p>虽然字幕组本身提供提供了 RSS 功能，但是在群晖中一直无法正常识别。</p>
+<p>rsshub 的文档也有提及这一点：</p>
+<p><img src="/blogs/2020/11/08/synology/follow-episodes-by-rsshub/img008.png" alt=""></p>
+<p>以刚完结不久的《神盾局特工》为例，网址最后的数字便是我们需要的id。</p>
+<blockquote>
+<p><a href="http://www.rrys2020.com/resource/30675" target="_blank" rel="noopener">http://www.rrys2020.com/resource/30675</a></p>
+</blockquote>
+<p><img src="/blogs/2020/11/08/synology/follow-episodes-by-rsshub/img009.png" alt=""></p>
+<p>打开 Download Station-&gt; RSS Feeds，选择加入</p>
+<p><img src="/blogs/2020/11/08/synology/follow-episodes-by-rsshub/img010.png" alt=""></p>
+<p>格式如下</p>
+<blockquote>
+<p>http://{群晖域名}:{端口}/zimuzu/resource/30675</p>
+</blockquote>
+<p>可以在网址最后以?开头加上需要的参数，这里选用的是<code>filter_title</code>，作用是根据标题过滤出想要的剧集。</p>
+<p>其他参数请参考：<a href="https://docs.rsshub.app/parameter.html" target="_blank" rel="noopener">https://docs.rsshub.app/parameter.html</a></p>
+<p>选中“自动下载所有项目”并指定目的地文件夹，便于今后的自动追剧。</p>
+<p><img src="/blogs/2020/11/08/synology/follow-episodes-by-rsshub/img011.png" alt=""></p>
+<p>加入完成后，可以在 RSS Feeds 中看到对应的剧集。</p>
+<p><img src="/blogs/2020/11/08/synology/follow-episodes-by-rsshub/img012.png" alt=""></p>
+<p>RSS 默认的更新间隔时间是24小时，可以根据需求自行在左下角的设置-&gt;RSS 中进行修改。</p>
+<p><img src="/blogs/2020/11/08/synology/follow-episodes-by-rsshub/img013.png" alt=""></p>
 <script>
         document.querySelectorAll('.github-emoji')
           .forEach(el => {
@@ -440,7 +477,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://fifamvp.github.io/blogs/2020/10/06/synology/synology-install-docker/">https://fifamvp.github.io/blogs/2020/10/06/synology/synology-install-docker/</a>
+                    <a href="https://fifamvp.github.io/blogs/2020/11/08/synology/follow-episodes-by-rsshub/">https://fifamvp.github.io/blogs/2020/11/08/synology/follow-episodes-by-rsshub/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -524,7 +561,7 @@
         repo: 'fifamvp.github.io',
         owner: 'fifamvp',
         admin: "fifamvp",
-        id: '2020-10-06T15-45-13',
+        id: '2020-11-08T16-54-58',
         distractionFreeMode: false  // Facebook-like distraction free mode
     });
 
@@ -811,9 +848,10 @@
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
             <div class="card">
                 <a href="/blogs/2020/11/08/synology/follow-episodes-by-rsshub/">
                     <div class="card-image">
@@ -831,9 +869,58 @@
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2020-11-08
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-11-08
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/NAS/" class="post-category">
+                                    NAS
+                                </a>
+                            
+                            
                         </span>
+                    </div>
+                </div>
+
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/%E7%BE%A4%E6%99%96/">
+                        <span class="chip bg-color">群晖</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">
+                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
+            </div>
+            <div class="card">
+                <a href="/blogs/2020/10/06/synology/synology-install-docker/">
+                    <div class="card-image">
+                        
+                        <img src="/images/docker.png" class="responsive-img" alt="群晖安装Docker">
+                        
+                        <span class="card-title">群晖安装Docker</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            如何在群晖上安装Docker？
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-10-06
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
@@ -853,42 +940,6 @@
                         <span class="chip bg-color">群晖</span>
                     </a>
                     
-                </div>
-                
-            </div>
-        </div>
-        
-        
-        <div class="article col s12 m6" data-aos="fade-up">
-            <div class="article-badge right-badge text-color">
-                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
-            </div>
-            <div class="card">
-                <a href="/blogs/2020/09/20/anonatsu/">
-                    <div class="card-image">
-                        
-                        <img src="/medias/meima.jpg" class="responsive-img" alt="あの夏">
-                        
-                        <span class="card-title">あの夏</span>
-                    </div>
-                </a>
-                <div class="card-content article-content">
-                    <div class="summary block-with-text">
-                        
-                            あの夏、あの季節に咲いていた花は　何て名前だったんだろう。どんどん通り過ぎる季節に道端に咲く花も　移り変わってゆく。だけど、あの花は　きっと　どこかに咲き続けている。そして、俺たちは　大人になっていく。そう、俺たちは　いつもでも　あの花の願
-                        
-                    </div>
-                    <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2020-09-20
-                            </span>
-                        <span class="publish-author">
-                            
-                            <i class="fas fa-user fa-fw"></i>
-                            FIFAMVP
-                            
-                        </span>
-                    </div>
                 </div>
                 
             </div>

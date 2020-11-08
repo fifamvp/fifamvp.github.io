@@ -4,6 +4,31 @@
   
     
     <entry>
+      <title>在NAS上利用RSSHub实现追剧</title>
+      <link href="/blogs/2020/11/08/synology/follow-episodes-by-rsshub/"/>
+      <url>/blogs/2020/11/08/synology/follow-episodes-by-rsshub/</url>
+      
+        <content type="html"><![CDATA[<h2 id="安装RSSHUB"><a href="#安装RSSHUB" class="headerlink" title="安装RSSHUB"></a>安装RSSHUB</h2><p>Github 地址：<a href="https://github.com/DIYgod/RSSHub" target="_blank" rel="noopener">https://github.com/DIYgod/RSSHub</a></p><p>官方文档: <a href="https://docs.rsshub.app/" target="_blank" rel="noopener">https://docs.rsshub.app/</a></p><ol><li><p>在群晖中打开 Docker-&gt;<strong>注册表</strong>中找到 rsshub，双击第一个 diygod/rsshub 进行安装</p><p><img src="/blogs/2020/11/08/synology/follow-episodes-by-rsshub/img001.png" alt=""></p></li><li><p>安装完成后，在<strong>映像</strong>中选中安装完成的 rsshub 然后点击启动</p><p><img src="/blogs/2020/11/08/synology/follow-episodes-by-rsshub/img002.png" alt=""></p></li><li><p>自定义<strong>容器名称</strong>，然后选择<strong>高级设置</strong></p><p><img src="/blogs/2020/11/08/synology/follow-episodes-by-rsshub/img003.png" alt=""></p></li><li><p>在<strong>端口设置</strong>中修改本地端口</p><p><img src="/blogs/2020/11/08/synology/follow-episodes-by-rsshub/img004.png" alt=""></p></li><li><p>点击应用并下一步至完成</p><p><img src="/blogs/2020/11/08/synology/follow-episodes-by-rsshub/img005.png" alt=""></p></li><li><p>在容器中可以看到 RSSHub 显示正常运行</p><p><img src="/blogs/2020/11/08/synology/follow-episodes-by-rsshub/img006.png" alt=""></p></li><li><p>浏览器输入 {群晖域名}:{刚设置的端口}，如下图所示则 RSSHub 运行正常。</p><p><img src="/blogs/2020/11/08/synology/follow-episodes-by-rsshub/img007.png" alt=""></p></li></ol><h2 id="获取字幕组链接"><a href="#获取字幕组链接" class="headerlink" title="获取字幕组链接"></a>获取字幕组链接</h2><p>虽然字幕组本身提供提供了 RSS 功能，但是在群晖中一直无法正常识别。</p><p>rsshub 的文档也有提及这一点：</p><p><img src="/blogs/2020/11/08/synology/follow-episodes-by-rsshub/img008.png" alt=""></p><p>以刚完结不久的《神盾局特工》为例，网址最后的数字便是我们需要的id。</p><blockquote><p><a href="http://www.rrys2020.com/resource/30675" target="_blank" rel="noopener">http://www.rrys2020.com/resource/30675</a></p></blockquote><p><img src="/blogs/2020/11/08/synology/follow-episodes-by-rsshub/img009.png" alt=""></p><p>打开 Download Station-&gt; RSS Feeds，选择加入</p><p><img src="/blogs/2020/11/08/synology/follow-episodes-by-rsshub/img010.png" alt=""></p><p>格式如下</p><blockquote><p>http://{群晖域名}:{端口}/zimuzu/resource/30675</p></blockquote><p>可以在网址最后以?开头加上需要的参数，这里选用的是<code>filter_title</code>，作用是根据标题过滤出想要的剧集。</p><p>其他参数请参考：<a href="https://docs.rsshub.app/parameter.html" target="_blank" rel="noopener">https://docs.rsshub.app/parameter.html</a></p><p>选中“自动下载所有项目”并指定目的地文件夹，便于今后的自动追剧。</p><p><img src="/blogs/2020/11/08/synology/follow-episodes-by-rsshub/img011.png" alt=""></p><p>加入完成后，可以在 RSS Feeds 中看到对应的剧集。</p><p><img src="/blogs/2020/11/08/synology/follow-episodes-by-rsshub/img012.png" alt=""></p><p>RSS 默认的更新间隔时间是24小时，可以根据需求自行在左下角的设置-&gt;RSS 中进行修改。</p><p><img src="/blogs/2020/11/08/synology/follow-episodes-by-rsshub/img013.png" alt=""></p><script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script>]]></content>
+      
+      
+      <categories>
+          
+          <category> NAS </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 群晖 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>群晖安装Docker</title>
       <link href="/blogs/2020/10/06/synology/synology-install-docker/"/>
       <url>/blogs/2020/10/06/synology/synology-install-docker/</url>
