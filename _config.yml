@@ -132,6 +132,9 @@ theme: hexo-theme-matery-master
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
-  type: git
+- type: git
   repo: https://github.com/fifamvp/fifamvp.github.io.git
+  branch: master
+- type: git
+  repo: https://gitee.com/fifamvp/fifamvp.git
   branch: master
