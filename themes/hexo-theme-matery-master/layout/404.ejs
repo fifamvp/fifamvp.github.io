@@ -1,10 +1,9 @@
 <style type="text/css">
     /* don't remove. */
     .about-cover {
-        height: 75vh;
+        height: 90.2vh;
     }
 </style>
-
 <div class="bg-cover pd-header about-cover">
     <div class="container">
         <div class="row">
@@ -22,7 +21,14 @@
     </div>
 </div>
 
-<script>
-    // 每天切换 banner 图.  Switch banner image every day.
-    $('.bg-cover').css('background-image', 'url(<%- theme.jsDelivr.url %><%- url_for('/medias/banner/' + new Date().getDay() + '.jpg') %>)');
-</script>
+<% if (theme.banner.enable) { %>
+    <script>
+        // 每天切换 banner 图.  Switch banner image every day.
+        var bannerUrl = "<%- theme.jsDelivr.url %><%- url_for('/medias/banner/') %>" + new Date().getDay() + '.jpg';
+        $('.bg-cover').css('background-image', 'url(' + bannerUrl + ')');
+    </script>
+<% } else { %>
+    <script>
+        $('.bg-cover').css('background-image', 'url(<%- theme.jsDelivr.url %><%- url_for('/medias/banner/0.jpg') %>)');
+    </script>
+<% } %>
